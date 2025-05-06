@@ -1,12 +1,22 @@
 // Complete Guide to C++ Programming Foundations
-// Exercise 01_02
-// Hello World, by Eduardo Corpeño 
-
+// Exercise 01_02 
+// DECLARATIONS AND EXPRESSIONS
 #include <iostream>
 
 int main(){
-    std::cout << "Hi There!" << std::endl;
+    int a = 10;      // Declaration statement
+    int b = 3;      // Declaration statement
+    int c = a + b;  // Declaration statement with an expression
 
-    std::cout << std::endl << std::endl;
+    if (c > 5) {    // Conditional statement with an expression
+        std::cout << "C is greater than 5"; // Output to console
+
+        std::cout << std::endl << std::endl; // Add extra space
+    }
+    else{
+        std::cout << "C is less than 5";
+
+        std::cout << std::endl << std::endl; // Add extra space
+    }
     return 0;
 }
