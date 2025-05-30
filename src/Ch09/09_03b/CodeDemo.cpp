@@ -8,7 +8,7 @@
 
 int main(){
     std::ofstream outFile;
-    float a = 4.333f, b = 5.302f;
+    float a = 5.333f, b = 5.302f;
 
     outFile.open("calculations.txt");
     if (outFile.fail())
