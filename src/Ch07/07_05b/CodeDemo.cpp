@@ -2,10 +2,9 @@
 // Exercise 07_05
 // Using Classes, by Eduardo Corpeño 
 
+#include ""
 #include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
+
 
 class Inventory{
 public:
@@ -74,17 +73,26 @@ int main(){
     Inventory myInventory(5); 
     
     // Add 5 items
+    myInventory.addItem("Health Potion");
+    myInventory.addItem("Mana Potion");
+    myInventory.addItem("Sword");
+    myInventory.addItem("Shield");
+    myInventory.addItem("Bow");
 
     // Display current inventory
     myInventory.displayInventory(); 
 
     // Try to add another item when inventory is full
+    myInventory.addItem("Arrows");
 
     // Remove an item
-
+    myInventory.removeItem("Mana Potion");
+    
     // Display the item count
+    std::cout << "The inventory contains: " << myInventory.getItemCount() << " items." << std::endl;
 
     // Access item by index
+    std::cout << "Inventory item at index 1 is: " << myInventory.getItem(1) << std::endl;
 
     // Display final state of inventory
     myInventory.displayInventory();
